@@ -7,18 +7,16 @@ let xp = 0;
 
 function gainXP(amount) {
   xp += amount;
-  console.log("XP:", xp);
   document.getElementById("status").textContent = `Status: XP ${xp}`;
 }
 
-// =====================
-// Reset XP Button
-// =====================
-document.getElementById("resetBtn").addEventListener("click", function () {
+// NEW: inline-friendly reset
+function resetXP() {
   xp = 0;
   document.getElementById("status").textContent = `Status: XP ${xp}`;
   console.log("XP reset to 0");
-});
+}
+
 
 // =====================
 // Quote Generator
