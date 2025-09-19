@@ -1,4 +1,8 @@
-// 🎮 Latoya's first JavaScript
+// 🎮 Latoya's JavaScript Playground
+
+// =====================
+// XP Tracker
+// =====================
 let xp = 0;
 
 function gainXP(amount) {
@@ -6,7 +10,19 @@ function gainXP(amount) {
   console.log("XP:", xp);
   document.getElementById("status").textContent = `Status: XP ${xp}`;
 }
-// 🎨 Quote Generator
+
+// =====================
+// Reset XP Button
+// =====================
+document.getElementById("resetBtn").addEventListener("click", function () {
+  xp = 0;
+  document.getElementById("status").textContent = `Status: XP ${xp}`;
+  console.log("XP reset to 0");
+});
+
+// =====================
+// Quote Generator
+// =====================
 const quotes = [
   "Future you is proud of present you.",
   "One line of code at a time.",
@@ -20,10 +36,3 @@ document.getElementById("qBtn").addEventListener("click", function() {
   document.getElementById("quote").textContent = quotes[idx];
   gainXP(15); // reward extra XP for clicking!
 });
-// Reset XP button
-document.getElementById("resetBtn").addEventListener("click", function () {
-  xp = 0;
-  document.getElementById("status").textContent = `Status: XP ${xp}`;
-  console.log("XP reset to 0");
-});
-
