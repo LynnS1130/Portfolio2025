@@ -1,1 +1,21 @@
-body { background: white; }
+/* 🎨 Latoya's first stylesheet */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  margin: 20px;
+}
+
+h1 {
+  color: #2b6cb0;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  background: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
