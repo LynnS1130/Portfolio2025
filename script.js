@@ -20,4 +20,10 @@ document.getElementById("qBtn").addEventListener("click", function() {
   document.getElementById("quote").textContent = quotes[idx];
   gainXP(15); // reward extra XP for clicking!
 });
+// Reset XP button
+document.getElementById("resetBtn").addEventListener("click", function () {
+  xp = 0;
+  document.getElementById("status").textContent = `Status: XP ${xp}`;
+  console.log("XP reset to 0");
+});
 
