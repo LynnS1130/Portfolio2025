@@ -6,15 +6,28 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- Title -->
     <h1>Hello World!</h1>
     <p>This is my very first webpage on GitHub 🎉</p>
-    <p id="status">Status: XP 0</p>
-<button onclick="gainXP(10)">Click Me to Gain XP!</button>
-    <hr>
-<h2>Daily Inspiration</h2>
-<p id="quote">Click the button to get inspired ✨</p>
-<button id="qBtn">Get Quote</button>
 
-<script src="script.js"></script>
+    <!-- 🎮 Game HUD -->
+    <div id="hud">
+      <span id="status" class="badge">Status: XP 0</span>
+      <button id="resetBtn">Reset XP</button>
+    </div>
+
+    <!-- XP Button -->
+    <button onclick="gainXP(10)">Click Me to Gain XP!</button>
+
+    <hr>
+
+    <!-- Quote Generator -->
+    <h2>Daily Inspiration</h2>
+    <p id="quote">Click the button to get inspired ✨</p>
+    <button id="qBtn">Get Quote</button>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
+
