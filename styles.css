@@ -18,4 +18,40 @@ p {
   padding: 10px;
   border-radius: 8px;
 }
+/* ✨ Quote Box Style */
+#quote {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding: 15px;
+  margin: 20px auto;
+  width: 60%;
+  background: #fff7e6;
+  border: 2px solid #f6c177;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+#quote:hover {
+  background: #ffe4b5;
+}
+
+#qBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#qBtn:hover {
+  background-color: #1e4d80;
+}
 
